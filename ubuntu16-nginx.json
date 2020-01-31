@@ -131,7 +131,6 @@
 			"os-scripts.ud/3.vmware_install_common_tools.sh",
 			"os-scripts.ud/31.ubuntu_grub.sh",
 			"os-scripts.ud/4.vagrant.sh",
-			"os-scripts.ud/5.vbaddguest.sh",
 			"os-scripts.ud/6.cleanup.sh"
 		],
 		"only": [ "vmware-{{ user `build_name` }}" ]
@@ -146,6 +145,7 @@
 			"os-scripts.ud/3.install_common_tools.sh",
 			"os-scripts.ud/31.ubuntu_grub.sh",
 			"os-scripts.ud/4.vagrant.sh",
+			"os-scripts.ud/5.vbaddguest.sh",
 			"os-scripts.ud/6.cleanup.sh"
 		],
 		"only": [ "vbox-{{ user `build_name` }}" ]

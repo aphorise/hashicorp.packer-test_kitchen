@@ -6,7 +6,7 @@ This repo contains a `packer` template for building two Vagrant Base Box's for *
 Ensure that you already have the following applications installed & working:
  - [**Virtualbox**](https://www.virtualbox.org/)
  - [**Virtualbox Guest Additions (VBox GA)**](https://download.virtualbox.org/virtualbox/)
- - > **MacOS** (aka OSX) - VirtualBox 6.x+ is expected to be shipped with the related .iso present under (eg):
+ - > :apple: **macOS** (aka OSX) - VirtualBox 6.x+ is expected to be shipped with the related .iso present under (eg):
  `/Applications/VirtualBox.app/Contents/MacOS/VBoxGuestAdditions.iso`
 You may however need to download the .iso specific to your version (mount it) and execute the VBoxDarwinAdditions.pkg
  - [**Vagrant**](https://www.vagrantup.com/)
@@ -14,7 +14,7 @@ You may however need to download the .iso specific to your version (mount it) an
  - [**ChefDK**](https://downloads.chef.io/chefdk/4.7.73)
  - [**Test Kitchen**](https://github.com/test-kitchen/test-kitchen) 
  - **VMWare specific** - **skip** if not needed / see below notes.
- - - :key: Linux / Windows: [**VMware Workstation Player**](https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html) OR MacOS: [**VMware Fusion**](https://www.vmware.com/products/fusion/fusion-evaluation.html)
+ - - :key: Linux / Windows: [**VMware Workstation Player**](https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html) OR :apple: macOS: [**VMware Fusion**](https://www.vmware.com/products/fusion/fusion-evaluation.html)
  - - :key: [**Vagrant VMware License**](https://www.vagrantup.com/vmware/)
  - - [**Vagrant VMware Utility**](https://www.vagrantup.com/vmware/downloads.html) specific to your OS.
 
@@ -33,7 +33,7 @@ gem install bundler ;
 ```
 
 **OPTION-2**:
-On macOS (aka OSX) you may face some issues with the installation of specific versions via `rbenv` (eg: [1](https://stackoverflow.com/a/59977338/4887288), [2](https://stackoverflow.com/a/59987407/4887288)) that can conflict with existing installs such as: binutils, llvm or other gnu applications - these should be uninstalled and `rbenv` re-attempted; you can opt for OPTION-1 if you're still facing issues. 
+On :apple: macOS (aka OSX) you may face some issues with the installation of specific versions via `rbenv` (eg: [1](https://stackoverflow.com/a/59977338/4887288), [2](https://stackoverflow.com/a/59987407/4887288)) that can conflict with existing installs such as: binutils, llvm or other gnu applications - these should be uninstalled and `rbenv` re-attempted; you can opt for OPTION-1 if you're still facing issues. 
 ```bash
 #brew uninstall binutils ; # temporarily remove if applicable.
 brew install rbenv coreutils; # see: https://github.com/rbenv/rbenv - if needing to build 
