@@ -1,0 +1,26 @@
+---
+driver:
+  name: vagrant # driver_name
+  driver_config:
+  require_chef_omnibus: true
+
+provisioner:
+  name: chef_zero # provisoner_name
+
+platforms:
+  - name: vbox/nginx64
+    driver:
+      box: nginx64
+      provider: virtualbox
+  - name: vmware/nginx64
+    driver:
+      box: nginx64
+      provider: vmware_desktop
+
+verifier:
+  name: inspec
+
+suites:
+  - name: default
+#    run_list:
+#      - recipe[default]
