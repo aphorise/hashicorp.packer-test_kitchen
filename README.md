@@ -1,4 +1,4 @@
-# HashiCrop `packer` Templates with **test `kitchen`**
+# HashiCorp `packer` Templates with **test `kitchen`**
 This repo contains a `packer` template for building two Vagrant Base Box's for **Virtualbox** & **VMWare** - that are then tested using the **Test Kitchen** tool.
 
 
